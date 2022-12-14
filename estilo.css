@@ -1,0 +1,703 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta';   
+   }
+
+   body{
+    min-height: 1000px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: 0.6s;
+    padding: 10px 100px;
+    background: rgb(245, 211, 97);
+    z-index: 1000;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0 20px;
+}
+
+header .marca{
+    color: rgb(139, 95, 13);
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+header.sticky{
+    padding: 5px 100px;
+    background: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transition: .3s;
+}
+
+header.sticky ul li a{
+    color: rgb(139, 95, 13);
+}
+
+.banner{
+    min-height: 100vh;
+    width: 100%;
+
+    background: url(270368.jpg);
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h2{
+    font-size: 80px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.banner h2 .uno{
+    color: #640000;
+}
+
+.banner h2 .dos{
+    color: rgb(241, 255, 42);
+}
+
+.sec {
+    background: #fff;
+    padding: 100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec .content{
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.mxw800p{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.btn{
+    display: inline-block;
+    background: rgb(139, 95, 13);
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+h3{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+
+.services{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    max-width: 100%;
+    margin-top: 40px;
+}
+
+.services .box{
+    width: 300px;
+    margin: 0 auto;
+    background: rgb(245, 211, 97);
+    padding: 20px;
+    box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.5);
+}
+
+.services .box .iconBx{
+   margin-top: 25px; 
+}
+
+.services .box .iconBx img{
+    max-width: 70px;
+    margin-bottom: 15px;
+}
+
+.services .box h2{
+    font-size: 18px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.stats{
+    background: rgb(139, 95, 13);
+    padding-top: 250px;
+    margin-top: -250px;
+}
+
+.stats h3,
+.stats p
+{
+    color: #000;
+    font-weight: 600;
+}
+
+.statsBox{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 20px;
+    max-width: 100%;
+}
+
+.statsBox h2{
+    color: rgb(255, 255, 255);
+    font-size: 36px;
+}
+
+.statsBox h4{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+}
+
+.workBx{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 10px;
+    max-width: 100%;
+    margin-top: 40px;
+}
+
+.workBx .brand{
+    position: relative;
+    background: rgb(245, 211, 97);
+    height: 330px;
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.workBx .brand:hover{
+    background: rgb(139, 95, 13);
+}
+
+.workBx .brand a{
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.teamBx{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 20px;
+    max-width: 100%;
+    margin-top: 40px;   
+}
+
+.teamBx .member{
+    position: relative;
+    background: rgb(139, 95, 13);
+    min-height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teamBx .member .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.teamBx .member .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.teamBx .member .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(139, 95, 13);
+    transition: 0.2s;
+    opacity: 0;
+}
+
+.teamBx .member .details:hover{
+    opacity: 1;
+}
+
+.teamBx .member .details h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.teamBx .member .details h2 span{
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+}
+.slider{
+    position: relative;
+}
+.slider-items{
+    overflow: hidden;
+}
+
+@keyframes zoom{
+    0%{transform: scale(1.2); opacity: 0;}
+    100%{transform: scale(1); opacity: 1;}
+}
+
+.slider-items .item {
+    display: none;
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    animation: zoom 1s;
+}
+.slider-items .item img{
+    max-width: 100%;
+    display: block;
+}
+
+.slider-items .item.active{
+    display: block;
+}
+.slider-items .item .caption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #000;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+}
+
+.slider .left-slide, .slider .right-slide{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background: #444444;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .5s ease;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slider .left-slide{
+    left: 10px;
+} 
+.slider .right-slide{
+    right: 10px;
+}
+.slider .left-slide:hover,
+.slider .right-slide:hover{
+    background: rgb(139, 95, 13);
+}
+.contact{
+    background: rgb(139, 95, 13);
+}
+
+.contact h3, .contact p{
+    color: #fff;
+}
+
+.contactForm{
+    position: relative;
+    max-width: 800p;
+    margin: 0 auto;
+    display: flex;
+}
+
+.contactForm form{
+    width: 100%;
+}
+
+.contactForm .row100{
+    display: flex;
+    width: 100%;
+}
+
+.contactForm .row100 .inputBx50{
+    width: 50%;
+    margin: 0 20px;
+}
+
+.contactForm .row100 .inputBx100{
+    width: 100%;
+    margin: 0 20px;
+}
+
+.contactForm .row100 input,
+.contactForm .row100 textarea{
+    position: relative;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    width: 100%;
+    padding: 10px 0;
+    outline: none;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 20px 0;
+    resize: none;
+}
+
+.contactForm .row100 textarea{
+    height: 100px;
+}
+
+.contactForm .row100 input::placeholder,
+.contactForm .row100 textarea::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.contactForm .row100 input[type="submit"]{
+    background: rgb(245, 211, 97);
+    color: #000;
+    max-width: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-weight: 500;
+}
+#textEmail{
+    display: block;
+    color: #000;
+    font-weight: 500;
+    padding: 1px;
+    text-align: left;
+    margin-top: -10px;
+}
+#textNombre{
+    display: block;
+    color: #000;
+    font-weight: 500;
+    padding: 1px;
+    text-align: left;
+    margin-top: -10px;
+}
+#textTelefono{
+    display: block;
+    color: #000;
+    font-weight: 500;
+    padding: 1px;
+    text-align: left;
+    margin-top: -10px;
+}
+#textMensaje{
+    display: block;
+    color: #000;
+    font-weight: 500;
+    padding: 1px;
+    text-align: left;
+    margin-top: -10px;
+}
+.sci{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.sci ul{
+    display: flex;
+}
+
+.sci ul li{
+    list-style: none;
+}
+
+.sci ul li a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.sci ul li a img{
+    filter: invert(1);
+    max-width: 40px;
+}
+
+.sci ul li a:hover img{
+    opacity: 0.5;
+}
+#button-up{
+    width: 60px;
+    height: 60px;
+    background: rgb(139, 95, 13);
+    border-radius: 50%;
+    cursor: pointer;
+    border: 4px solid transparent;
+
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    color: #fff;
+    font-size: 20px;
+
+    transition: all 300ms ease;
+    transform: scale(1);
+    box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.5);
+}
+#button-up:hover{
+    transform:scale(1.1);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+.tabla{
+    width: 100%;
+}
+.tabla thead{
+    background: #000;
+    color: #fff;
+}
+.tabla th, .tabla td{
+    padding: 20px;
+}
+.tabla tr:nth-child(even){
+    background: #6b4705;
+}
+.tabla tr:hover td{
+    background: #6b4705;
+}
+.tabla tbody{
+    background: #000;
+    color: #fff;
+}
+.tabla tfoot td{
+    text-align: left;
+}
+.tabla tfoot .btn{
+    background: #6b0808;
+    height: 40px;
+    width: 80px;
+    padding: 10px;
+}
+.loginBox{
+    position: fixed;
+    top: 70%;
+    left: 50%;
+
+    width: 350px;
+    height: 450px;
+
+    background: #000;
+    padding: 60px 40px;
+    visibility: hidden;
+    transition: 0.5s;
+    opacity:0;
+
+    transform: translate(-50%, -70%);
+}
+
+.loginBox.active{
+    top: 75%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.loginBox .user{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+    position: absolute;
+    top: -50px;
+    left: 125px;
+
+    background: #fff;
+    padding: 5px;
+
+    border: 4px solid #000;
+}
+
+.loginBox .btnClose{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    width: 30px;
+    height: 30px;
+    background: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.loginBox h2{
+    color: #4978ff;
+    text-align: center;
+    padding: 0 0 20px;
+}
+
+.loginBox p{
+    color: #fff;
+    font-weight: 500;
+}
+
+.loginBox input{
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #fff;
+    height: 40px;
+}
+
+.loginBox input[type="text"],
+.loginBox input[type="password"]
+{
+    background: transparent;
+    border-bottom: 1px solid #fff;
+}
+.loginBox input[type="submit"]{
+    background: #ff267c;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.loginBox input[type="submit"]:hover{
+    background: #4978ff;
+    color: #262626;
+}
+
+.loginBox a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+}
+
+.loginBox a:hover{
+    text-decoration: underline;
+}
+/*ESTILOS PARA PANTALLAS PEQUEÑAS*/
+
+@media (max-width: 900px){
+    .btnMenu{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+    header,
+    header.sticky{
+        padding: 5px 50px;
+        background: #fff;
+    }
+    header ul li a{
+        color: rgb(139, 95, 13); 
+    }
+    header ul{
+        position: absolute;
+        visibility: hidden;
+    }
+    header.active ul{
+        visibility: visible;
+        display: block;
+        top: 65px;
+        left: 0;
+        background: #fff;
+        width: 100%;
+        text-align: center;
+    }
+    header.active ul li a{
+        display: inline-block;
+        margin: 10px 0;
+        font-size: 20px;
+    }
+    .btnMenu::before{
+        content: '';
+        position: absolute;
+        top: 4px;
+        width: 100%;
+        height: 2px;
+        background: rgb(139, 95, 13);
+        box-shadow: 0 10px 0 rgb(139, 95, 13);
+    }
+    .btnMenu::after{
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        width: 100%;
+        height: 2px;
+        background: rgb(139, 95, 13);
+    }
+}
